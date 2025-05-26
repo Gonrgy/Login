@@ -6,6 +6,9 @@ import utilityFolder.JavaScriptUtility;
 
 public class FakeData {
 
+
+    // FAKEDATA FÜR https://www.saucedemo.com/
+
     public static String wrongUserName = "bliblaman28";
 
     public static String wrongPassword = "ewqdsadada2321!";
@@ -23,6 +26,11 @@ public class FakeData {
     public static String HomePageHeaderName = "Swag Labs";
 
     public static String ProductsPageHeaderName = "Products";
+
+    public static By userNameInput = By.xpath("//input[@id=\"user-name\"]");
+    public static By passwordInput = By.xpath("//input[@id=\"password\"]");
+    public static By loginButton = By.xpath("//input[@id=\"login-button\"]");
+    public static By errorMessage = By.xpath("\"//div[@class=\\\"error-message-container error\\\"]//h3\"");
 
 
     // UM DIE SEITE ZU CHECKEN

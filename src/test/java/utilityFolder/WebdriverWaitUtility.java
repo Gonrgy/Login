@@ -19,8 +19,15 @@ public class WebdriverWaitUtility extends utility{
     }
 
     public static WebElement itemIsDisplayed(By locator)throws InterruptedException{
-
         return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+    }
+
+    public static String alertIsPresentAndGetText()throws InterruptedException{
+         return wait.until(ExpectedConditions.alertIsPresent()).getText();
+    }
+    public static void alertIsPresentAndAccept()throws InterruptedException{
+        wait.until(ExpectedConditions.alertIsPresent()).accept();
+
     }
 }
 

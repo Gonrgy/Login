@@ -19,6 +19,7 @@ public class BasePage {
     }
 
     public static void set(By locator,String keys)throws InterruptedException{
+        find(locator).clear();
         find(locator).sendKeys(keys);
     }
 

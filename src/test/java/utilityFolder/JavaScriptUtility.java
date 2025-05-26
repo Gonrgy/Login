@@ -26,4 +26,5 @@ public class JavaScriptUtility extends utility {
         String jsScript = "arguments[0].click()";
         js.executeScript(jsScript,element);
     }
+
 }
