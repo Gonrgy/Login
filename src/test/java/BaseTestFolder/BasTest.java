@@ -32,7 +32,10 @@ public class BasTest {
         WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
 
+        options.addArguments("--incognito");
+        options.addArguments("--headless");
         driver = new ChromeDriver(options);
+        
         BasePage.setDriver(driver);
         utility.setUp(driver);
         JavaScriptUtility.JavaScriptSetUp();
@@ -41,8 +44,9 @@ public class BasTest {
 
     @Before
     public void loadApplication()throws InterruptedException{
-        driver.get(pageForRegister);
         driver.manage().deleteAllCookies();
+        driver.get(pageForRegister);
+
         utility.driver.manage().window().maximize();
     }
 
