@@ -9,5 +9,6 @@ build:
 test:
   stage: test
   script:
+    - mvn test -Dorg.apache.hc.client5.http.wire.level=WARN -Dorg.apache.hc.client5.http.wire.content.level=WARN
     - mvn clean test
 
