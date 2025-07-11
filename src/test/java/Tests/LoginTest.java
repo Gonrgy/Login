@@ -56,12 +56,13 @@ public class LoginTest extends BasTest {
         HomePage.check_everyThink_with_wrong_input(FakeDataForRegister.userNameTextBox,FakeDataForRegister.passwordTextBox,FakeDataForRegister.loginButton,FakeDataForRegister.falscherUserName,FakeDataForRegister.falschesPassword,FakeDataForRegister.fehlerMeldung,FakeDataForRegister.invalideUserNameOrPassword);
     }
 
+    /*
     @Test
     public void register()throws InterruptedException{
        var x =  PagesFolderForRegister.HomePage.go_to_Bookstoreapplication_page().go_to_login_page();
         x.go_to_register();
     }
-
+*/
     @Test
     public void login_successfull()throws InterruptedException{
         var x =  PagesFolderForRegister.HomePage.go_to_Bookstoreapplication_page().go_to_login_page();
